@@ -1,0 +1,34 @@
+{
+  "name": "jsonplaceholder-lib",
+  "version": "1.0.0",
+  "description": "Library to interact with jsonplaceholder APIs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generatetypes": "json2ts -i src/jsonschemas/ -o src/types/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allevo/jsonplaceholder-lib.git"
+  },
+  "author": "Tommaso Allevi <tomallevi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allevo/jsonplaceholder-lib/issues"
+  },
+  "homepage": "https://github.com/allevo/jsonplaceholder-lib#readme",
+  "dependencies": {
+    "ajv": "^8.5.0",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.7",
+    "@types/node": "^15.3.1",
+    "json-schema-to-typescript": "^10.1.4"
+  }
+}
